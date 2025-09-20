@@ -5,7 +5,7 @@ let PostCreate=()=>{
 const [title,setTitle]=useState('');
 const onSubmit= async (event)=>{
   event.preventDefault(); // this is prevent default reloading of page
-  await axios.post('http://localhost:4000/posts',{
+  await axios.post('http://posts.com/posts/create',{
     title,
   });
 

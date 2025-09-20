@@ -12,6 +12,7 @@ const handleEvent = (type,data)=>{
   if(type==="PostCreated"){
     const {id,title}=data;
     posts[id]={id, title, comments: [] };
+    console.log("post ID - ",id," Post title - ",title);
    }
    if(type==="CommentCreated" || type === 'CommentUpdated'){
     const {id, content, postId, status}=data;

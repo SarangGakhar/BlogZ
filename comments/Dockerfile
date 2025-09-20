@@ -1,4 +1,4 @@
-#  specify docker image 
+    #  specify docker image 
 
 # FROM alpine
 FROM node:alpine
@@ -7,7 +7,7 @@ FROM node:alpine
 WORKDIR /app
 COPY ./package.json ./
 
-#  Install some dependencies 
+#  Install some dependencies
 RUN npm install
 
 COPY ./ ./
